@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Test</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="playAudio()">
+        <div class="container">
+                <!-- Video -->
+                <video class = "video" id = "day" loop="true" onclick="playAudio()" autoplay="autoplay" controls muted>
+                    <source src="items/day.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+                <video class = "video" id = "sunset" loop="true" onclick="playAudio()" autoplay="autoplay" controls muted>
+                    <source src="items/sunset.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+                <video class = "video" id = "night" loop="true" onclick="playAudio()" autoplay="autoplay" controls muted>
+                    <source src="items/night.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <!-- Audio -->
+                <audio id = "myAudio" controls autoplay loop>
+                    <source src="items/test.ogg" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+        </div>
+        <script type="application/javascript" src="scripts.js"></script>
+    </body>
+</html>
